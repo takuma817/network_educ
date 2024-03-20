@@ -15,7 +15,7 @@
 
 int main()
 {
-    int                ret; 
+    int                ret;
     int                sockfd;
     int                connd;
     struct sockaddr_in servAddr;
