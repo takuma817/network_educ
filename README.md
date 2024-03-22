@@ -1,10 +1,14 @@
 # Network_educ
 西研究室の新人教育用資料です。西研での新人教育目的以外での他者への共有を禁じます。
+ローカル内で通信する時はターミナルを二つ開き、IPアドレス```127.0.0.1```を指定します
 
-## socket-c
+## socket-python
 c言語で記述されたソケット通信プログラムです
 
 #### 使い方
+port番号はウェルノウンポートではない好きな値を指定する
+例：11111
+
 server
 
 ```
@@ -16,7 +20,7 @@ client
 python clint.py [宛先IPアドレス] [port番号]
 ```
 
-## socket-python
+## socket-c
 pythonで記述されたソケット通信プログラムです
 
 #### 使い方
@@ -24,11 +28,13 @@ pythonで記述されたソケット通信プログラムです
 make
 ```
 server
-``` 
+```
+cd server
 ./server-tcp 
 ```
 client
 ```
+cd client
 ./client-tcp [IPアドレス]
 ```
 
@@ -41,9 +47,11 @@ make
 ```
 server
 ```
+cd server
 ./server-tls
 ```
 client
 ```
+cd client
 ./client-tls [IPアドレス]
 ```
