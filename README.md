@@ -13,12 +13,12 @@ port番号はウェルノウンポートではない好きな値を指定する
 server
 
 ```
-python server [port番号]
+python server.py [port番号]
 ```
 
 client
 ```
-python clint.py [宛先IPアドレス] [port番号]
+python client.py [宛先IPアドレス] [port番号]
 ```
 
 ## socket-c
